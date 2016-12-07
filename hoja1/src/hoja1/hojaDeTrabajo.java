@@ -157,7 +157,33 @@ public class hojaDeTrabajo extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-     
+     int variable1, variable2, variable3, variable4;
+        variable1 = Integer.parseInt (jTextField1.getText());
+       variable2 = Integer.parseInt (jTextField2.getText());
+       variable3 = Integer.parseInt (jTextField3.getText());
+       variable4 = Integer.parseInt (jTextField4.getText());
+       
+       int resultado1 =1,resultado2 = 1,resultado3 = 1,resultado4 = 1;
+       
+       for (int i = 2; i <= variable1; i++) {
+                
+                resultado1 = resultado1 * i;
+            }
+       for (int i = 2; i <= variable2; i++) {
+                
+                resultado2 = resultado2 * i;
+            }
+       for (int i = 2; i <= variable3; i++) {
+                
+                resultado3 = resultado3 * i;
+            }
+       for (int i = 2; i <= variable4; i++) {
+                
+                resultado4 = resultado4 * i;
+            }
+       
+       JOptionPane.showMessageDialog(null, "el factorial de cada numero es " + resultado1 + ", " + resultado2 + ", " + resultado3 + ", " + resultado4 );
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
