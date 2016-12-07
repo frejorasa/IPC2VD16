@@ -190,24 +190,24 @@ public class hojaDeTrabajo extends javax.swing.JFrame {
        variable4 = Integer.parseInt (jTextField4.getText());
        
        if (variable1< variable2 && variable1 < variable3 && variable1 < variable4){
-            JOptionPane.showMessageDialog(null, "el numero menor es " + variable1);
+            JOptionPane.showMessageDialog(null, "el numero menor es " + variable1 + "_201503368");
        }
        else {
          if (variable2< variable1 && variable2 < variable3 && variable2 < variable4){
-            JOptionPane.showMessageDialog(null, "el numero menor es " + variable2);
+            JOptionPane.showMessageDialog(null, "el numero menor es " + variable2 + "_201503368");
        } 
          else
          {
           if (variable3< variable2 && variable3 < variable1 && variable3 < variable4){
-            JOptionPane.showMessageDialog(null, "el numero menor es " + variable3);
+            JOptionPane.showMessageDialog(null, "el numero menor es " + variable3 + "_201503368");
        }
           else
           {
            if (variable3 == variable2 && variable3 == variable1 && variable3 == variable4){
-            JOptionPane.showMessageDialog(null, "los numeros son iguales");
+            JOptionPane.showMessageDialog(null, "los numeros son iguales" + "_201503368");
        }
            else {
-            JOptionPane.showMessageDialog(null, "el numero menor es " + variable4);
+            JOptionPane.showMessageDialog(null, "el numero menor es " + variable4 + "_201503368");
        }
           
         
