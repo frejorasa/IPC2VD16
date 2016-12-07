@@ -1,0 +1,11 @@
+¿que entiende  como "commit"?
+
+un commit es un archivo donde se muestran ciertos cambios dentro de un archivo base.
+
+¿que entiende  como "merge"?
+
+merge nos sirve para fusionar, es la rama master.
+
+¿cual es la diferencia entre pull y push?
+
+la diferencia es que pull sirve para recivir repositorios remotos y push para enviarlos
