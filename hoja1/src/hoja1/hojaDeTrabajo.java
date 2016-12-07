@@ -54,7 +54,7 @@ public class hojaDeTrabajo extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("fibonacci");
+        jButton3.setText("menor");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -89,12 +89,12 @@ public class hojaDeTrabajo extends javax.swing.JFrame {
                         .addComponent(jButton2)
                         .addGap(18, 18, 18)
                         .addComponent(jButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                         .addComponent(jButton4))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(99, 99, 99)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -153,7 +153,37 @@ public class hojaDeTrabajo extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+      int variable1, variable2, variable3, variable4;
+        variable1 = Integer.parseInt (jTextField1.getText());
+       variable2 = Integer.parseInt (jTextField2.getText());
+       variable3 = Integer.parseInt (jTextField3.getText());
+       variable4 = Integer.parseInt (jTextField4.getText());
+       
+       if (variable1< variable2 && variable1 < variable3 && variable1 < variable4){
+            JOptionPane.showMessageDialog(null, "el numero menor es " + variable1);
+       }
+       else {
+         if (variable2< variable1 && variable2 < variable3 && variable2 < variable4){
+            JOptionPane.showMessageDialog(null, "el numero menor es " + variable2);
+       } 
+         else
+         {
+          if (variable3< variable2 && variable3 < variable1 && variable3 < variable4){
+            JOptionPane.showMessageDialog(null, "el numero menor es " + variable3);
+       }
+          else
+          {
+           if (variable3 == variable2 && variable3 == variable1 && variable3 == variable4){
+            JOptionPane.showMessageDialog(null, "los numeros son iguales");
+       }
+           else {
+            JOptionPane.showMessageDialog(null, "el numero menor es " + variable4);
+       }
+          
+        
+          }
+         }
+       }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
